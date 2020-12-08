@@ -5,7 +5,7 @@
 **Bikeshare Project**
 
 ### Description
-Provides data and statistics on the usage of bikesharing in three large cities in the US
+Provides data and statistics on the usage of bikesharing in three large cities in the US (New York City, Chicago and Washington)
 
 ### Files used
 bikeshare_project.py
