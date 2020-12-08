@@ -1,8 +1,8 @@
 ### Date created
-December 7th 2020
+*December 7th 2020*
 
 ### Project Title
-Bikeshare Project
+**Bikeshare Project**
 
 ### Description
 Provides data and statistics on the usage of bikesharing in three large cities in the US
