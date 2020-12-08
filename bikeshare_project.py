@@ -22,7 +22,7 @@ def get_filters():
         if city=='chicago' or city=='new york city' or city=='washington':
             break
         else:
-            print('This is not a valid city name. Try again\n')
+            print('This is not a valid city name. Please try again\n')
 
 
    # TO DO: get user input for month (all, january, february, ... , june)
@@ -31,7 +31,7 @@ def get_filters():
         if month=='january' or month=='february' or month=='march' or month=='april' or month=='may' or month=='june' or month=='all':
             break
         else:
-            print('This is not a valid month. Try again\n')
+            print('This is not a valid month. Please try again\n')
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
@@ -39,7 +39,7 @@ def get_filters():
         if day=='monday' or day=='tuesday' or day=='wednesday' or day=='thursday' or day=='friday' or day=='saturday' or day=='sunday' or day=='all':
             break
         else:
-            print('This is not a valid day. Try again\n')
+            print('This is not a valid day. Please try again\n')
 
 
     print('-'*40)
@@ -83,16 +83,16 @@ def time_stats(df):
 
     # TO DO: display the most common month
     common_month=df['month'].mode()[0]
-    print('Most common month: {} '.format(common_month))
+    print('This is the most common month: {} '.format(common_month))
 
     # TO DO: display the most common day of week
     common_day=df['day_of_week'].mode()[0]
-    print('Most common day of the week: {} '.format(common_day))
+    print('This is the most common day of the week: {} '.format(common_day))
 
     # TO DO: display the most common start hour
     starthour=df['Start Time'].dt.hour
     common_starthour=starthour.mode()[0]
-    print('Most common start hour is: {} '.format(common_starthour))
+    print('This is the most common start hour is: {} '.format(common_starthour))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -107,17 +107,17 @@ def station_stats(df):
 
     # TO DO: display most commonly used start station
     common_startstation=df['Start Station'].mode()[0]
-    print('Most commonly used start station is: {} '.format(common_startstation))
+    print('The most commonly used start station is: {} '.format(common_startstation))
 
     # TO DO: display most commonly used end station
     common_endstation=df['End Station'].mode()[0]
-    print('Most commonly used end station is: {}'.format(common_endstation))
+    print('The most commonly used end station is: {}'.format(common_endstation))
 
     # TO DO: display most frequent combination of start station and end station trip
     common_combination=df.groupby(['Start Station','End Station']).size().idxmax()
-    print('Most frequent combination of start and end station trip is: {}'.format(common_combination))
+    print('The most frequent combination of start and end station trip is: {}'.format(common_combination))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took only %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
